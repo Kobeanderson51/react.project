@@ -1,14 +1,22 @@
+import { useState } from 'react'
+import Modal from "../modal/modal.js"
+import MyModal from "../modal/modal.js"
+
 export default function Add() {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    function toggleModal(e) {
+        console.log('toggling modal!')
+      setIsOpen(!isOpen);
+    }
+
     return (
-        <div className="flex flex-col items-center p-10">
-            <h3 className="text-3xl border-b-4 border-slate-300 p-5">Add New Transaction</h3>
-            <form className="flex flex-col w-96 p-5">
-                <label>Description</label>
-                <input type="text" id="description" className="p-2 mb-5" />
-                <label>Amount</label>
-                <input type="number" id="amount" className="p-2 mb-5" />
-                <button className="bg-slate-300 p-2 text-white">Add Transaction</button>
-            </form>
+    <div className="flex justify-center">
+        <div className="flex justify-center pr-4 bg-slate-10 shadow-md shadow-slate-400 hover:shadow-2xl rounded-md">
+            <h3 className="text-2xl p-5">Add New Transaction</h3>
+            <MyModal isOpen={isOpen} toggleModal={toggleModal} />
         </div>
+    </div>
     )
 }

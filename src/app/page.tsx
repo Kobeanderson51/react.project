@@ -1,5 +1,5 @@
 "use client"
-import Modal, { ModalProvider } from "styled-react-modal";
+import { ModalProvider } from "styled-react-modal";
 import Header from "../header/header.js";
 import History from "../history/history.js";
 import Add from "../add/add.js";

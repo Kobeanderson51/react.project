@@ -27,7 +27,7 @@ export default function Add() {
                 </div>
             </div>
 
-            <div className="flex justify-center">
+            <div className="flex justify-center mb-20">
                 <div className="flex justify-center pr-4 bg-slate-10 shadow-md shadow-slate-400 hover:shadow-2xl rounded-md">
                     <h3 className="text-2xl p-5">Add Deposit</h3>
                     

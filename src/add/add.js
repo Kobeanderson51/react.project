@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Modal, { DepositModal } from "../modal/modal.js"
 import {ExpenseModal} from "../modal/modal.js"
 
+
 export default function Add() {
 
     const [depositisOpen, setdepositisOpen] = useState(false);
@@ -18,19 +19,22 @@ export default function Add() {
 
     return (
         <>
-    <div className="flex justify-center m-10">
-        <div className="flex justify-center pr-4 bg-slate-10 shadow-md shadow-slate-400 hover:shadow-2xl rounded-md">
-            <h3 className="text-2xl p-5">Add Expense</h3>
-            <ExpenseModal isOpen={expenseisOpen} toggleModal={toggleExpense} />
-        </div>
-    </div>
+        <div className="-mt-20">
+            <div className="flex justify-center m-10">
+                <div className="flex justify-center pr-4 bg-slate-10 shadow-md shadow-slate-400 hover:shadow-2xl rounded-md">
+                    <h3 className="text-2xl p-5">Add Expense</h3>
+                    <ExpenseModal isOpen={expenseisOpen} toggleModal={toggleExpense} />
+                </div>
+            </div>
 
-     <div className="flex justify-center">
-        <div className="flex justify-center pr-4 bg-slate-10 shadow-md shadow-slate-400 hover:shadow-2xl rounded-md">
-            <h3 className="text-2xl p-5">Add Deposit</h3>
-            <DepositModal isOpen={depositisOpen} toggleModal={toggleDeposit} />
+            <div className="flex justify-center">
+                <div className="flex justify-center pr-4 bg-slate-10 shadow-md shadow-slate-400 hover:shadow-2xl rounded-md">
+                    <h3 className="text-2xl p-5">Add Deposit</h3>
+                    
+                    <DepositModal isOpen={depositisOpen} toggleModal={toggleDeposit} />
+                </div>
+            </div>
         </div>
-    </div>
     </>
     )
 }

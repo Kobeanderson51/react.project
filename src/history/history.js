@@ -5,7 +5,7 @@ export default function History() {
     return (
         <>
         <div className="flex justify-center mt-10">
-        <h3 className="text-3xl p-5">History</h3>
+        <h3 className="text-3xl">Transactions</h3>
         </div>
         <div className="mb-5 h-3/4">
             <div className="flex flex-col items-center p-10 overflow-y-scroll h-3/4">
@@ -19,8 +19,7 @@ export default function History() {
                         <div>Income 1</div>
                         <div>+500</div>
                         <div className="text-red-400">Delete</div>
-                    </li>
-                   
+                    </li>     
                 </ul>
             </div>
             </div>

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Modal, { DepositModal } from "../modal/modal.js"
 import {ExpenseModal} from "../modal/modal.js"
-
+import NameAndAmountData from "../add/nameAndAmountData.js"
 
 export default function Add() {
 
@@ -17,8 +17,9 @@ export default function Add() {
         setexpenseisOpen(!expenseisOpen);
     }
 
+
+
     return (
-        <>
         <div className="-mt-20">
             <div className="flex justify-center m-10">
                 <div className="flex justify-center pr-4 bg-slate-10 shadow-md shadow-slate-400 hover:shadow-2xl rounded-md">
@@ -35,7 +36,6 @@ export default function Add() {
                 </div>
             </div>
         </div>
-    </>
     )
 }
 

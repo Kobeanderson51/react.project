@@ -1,8 +1,11 @@
-export default function Header() {
-    return (
+import React from 'react';
+
+function Header() {
+  return (
+      <React.Fragment>
         <header className="flex flex-col items-center">
         
-          <h1 className="text-5xl p-5">Expense Tracker</h1>
+          <h1 className="text-5xl p-5 ">Expense Tracker</h1>
           <h2 className="text-3xl p-5">Your Balance</h2>
             <h3 className="text-3xl text-green-500 p-5">$0.00</h3>
               <h3></h3>
@@ -18,6 +21,7 @@ export default function Header() {
                 </div>
             </div>
         </header>
-      
-    )
+    </React.Fragment>
+  )
 }
+export default Header;

@@ -1,11 +1,11 @@
 "use client"
 import { ModalProvider } from "styled-react-modal";
 import Header from "../header/header.js";
-import History from "../history/history.js";
-import Add from "../add/add.js";
+import History from "../history/history";
+import Add from "../add/add";
 
-import { moneyRecord } from './types.js';
-import NameAndAmountData from '@/add/nameAndAmountData.js';
+import { moneyRecord } from './types';
+import NameAndAmountData from '@/add/nameAndAmountData';
 import useLocalStorage from 'use-local-storage';
 
 
@@ -30,31 +30,30 @@ export default function Home() {
       setDeposits([...deposits, deposit]);
   }
 
-              const deleteDeposit = (index: number): void => {
-                  const newDeposits = [...deposits];
-
-                  newDeposits.splice(index, 1);
-                  setDeposits(newDeposits);
-              }
+      const deleteDeposit = (index: number): void => {
+        const newDeposits = [...deposits];
+          newDeposits.splice(index, 1);
+          setDeposits(newDeposits);
+  }
+  
       const value = {
           transactions,
           addDeposit,
-          addTransaction,
+        addTransaction,
+          deposits,
           deleteDeposit,
           deleteTransaction
       };
 
-  
-  const a = 'a'
   return (
     <NameAndAmountData value={value}>
-    <ModalProvider>
-      <main className="flex flex-col">
-        <Header />
-        <History />
-        <Add />
-      </main>
-    </ModalProvider>
+      <ModalProvider>
+        <main className="flex flex-col">
+          <Header />
+          <History />
+          <Add />
+        </main>
+      </ModalProvider>
     </NameAndAmountData>
 
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import History from '@/history/history';
 
 function Header() {
   return (
@@ -7,7 +8,7 @@ function Header() {
         
           <h1 className="text-5xl p-5">Expense Tracker</h1>
           <h2 className="text-3xl p-5">Your Balance</h2>
-            <h3 className="text-3xl text-green-500 p-5">$0.00</h3>
+            <h3 className="text-3xl text-green-500 p-5"id='display-amount'>$0.00</h3>
               <h3></h3>
             <div className="flex flex-row justify-center bg-slate-300 shadow-lg shadow-slate-400 hover:shadow-2xl">
               <div className="p-5">

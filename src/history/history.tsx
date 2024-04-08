@@ -22,7 +22,7 @@ export default function History() {
                             return (
                                 <li key={transaction.id} className="flex justify-between p-5 bg-slate-300 shadow-lg shadow-slate-400 hover:shadow-2xl mb-5">
                                     <div>{transaction.name}</div>
-                                    <div>+${transaction.amount}</div>
+                                    <div id="amount">+${transaction.amount}</div>
                                     <div className="text-red-400" onClick={() => deleteTransaction(index)}>Delete</div>
                                 </li>
                             )

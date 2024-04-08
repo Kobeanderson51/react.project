@@ -1,0 +1,7 @@
+body{
+    background-color: whitesmoke;
+}
+body.dark-mode{
+    background-color: black;
+    color: whitesmoke;
+}

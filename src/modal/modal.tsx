@@ -86,7 +86,7 @@ export function DepositModal({ toggleModal, isOpen }) {
                   </div>
                   <div className="mt-14">
                       <button className="text-1xl bg-slate-400 rounded-md px-3 ml-5" onClick={toggleModal}>Cancel</button>
-                      <button className="text-1xl ml-40 bg-blue-400 rounded-md px-3"  onClick={onClickAddDeposit} id="add-deposit">Add</button>
+                      <button className="text-1xl ml-40 bg-blue-400 rounded-md px-3" onClick={onClickAddDeposit} id="add-deposit">Add</button>
                   </div>
               </div>
           </FocusLock>

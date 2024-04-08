@@ -1,7 +1,7 @@
 import React from 'react';
 import History from '@/history/history';
 
-function Header() {
+export default function Header() {
   return (
       <React.Fragment>
         <header className="flex flex-col items-center sm:text-center">
@@ -25,4 +25,3 @@ function Header() {
     </React.Fragment>
   )
 }
-export default Header;

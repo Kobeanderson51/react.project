@@ -11,7 +11,7 @@ export type NameAndAmountDataContextType = {
         addTransaction: (transaction: moneyRecord) => void,
           deposits: moneyRecord[],
           deleteDeposit: (index: number) => void,
-          deleteTransaction: (transaction: moneyRecord) => void,
+          deleteTransaction: (transaction: number) => void,
 }
 
 export const NameAndAmountDataContext = createContext<NameAndAmountDataContextType>({
@@ -20,7 +20,7 @@ export const NameAndAmountDataContext = createContext<NameAndAmountDataContextTy
     addTransaction: (transaction: moneyRecord) => {},
     deposits: [],
     deleteDeposit: (index: number) => {},
-    deleteTransaction: (transaction: moneyRecord) => {},
+    deleteTransaction: (transaction: number) => {},
 });
 
 export default function NameAndAmountData({ children, value }: { children: any[], value: NameAndAmountDataContextType}) {

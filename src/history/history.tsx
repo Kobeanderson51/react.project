@@ -1,10 +1,11 @@
 import { useContext } from 'react';
 import { NameAndAmountDataContext } from '../add/nameAndAmountData'; 
 
+
+
 export default function History() {
 
-    const { transactions, deleteTransaction } = useContext(NameAndAmountDataContext);
-    const { deposits, deleteDeposit } = useContext(NameAndAmountDataContext);
+    const { transactions, deleteTransaction, deposits, deleteDeposit } = useContext(NameAndAmountDataContext);
 
     return (
         <>

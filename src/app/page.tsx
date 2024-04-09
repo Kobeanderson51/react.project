@@ -3,10 +3,11 @@ import { ModalProvider } from "styled-react-modal";
 import Header from "../header/header.js";
 import History from "../history/history";
 import Add from "../add/add";
-
 import { moneyRecord } from './types';
 import NameAndAmountData from '@/add/nameAndAmountData';
 import useLocalStorage from 'use-local-storage';
+import DarkMode from "./darkmode/darkmode"
+
 
 
 
@@ -14,6 +15,7 @@ export default function Home() {
   // https://www.npmjs.com/package/use-local-storage
   const [transactions, setTransactions] = useLocalStorage<moneyRecord[]>("transactions", []);
   const [deposits, setDeposits] = useLocalStorage<moneyRecord[]>("deposits", []);
+  
   
   const addTransaction = (transaction: moneyRecord): void => {
       setTransactions([...transactions, transaction]);
@@ -45,17 +47,18 @@ export default function Home() {
           deleteTransaction
       };
 
+  
+
   return (
     <NameAndAmountData value={value}>
       <ModalProvider>
-        <main className="flex flex-col">
-          <Header />
-          <History />
+        {[
+          <DarkMode />,
+          <Header />,
+          <History />,
           <Add />
-        </main>
+        ]}
       </ModalProvider>
     </NameAndAmountData>
-
-
   );
 }

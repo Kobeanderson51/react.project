@@ -47,6 +47,8 @@ export default function Home() {
   
 
   return (
+    <>
+      <title>Budget Tracker</title>
     <NameAndAmountData value={value}>
       <ModalProvider>      
           <DarkModeSwitch />,
@@ -54,6 +56,7 @@ export default function Home() {
           <History />,
           <Add />
       </ModalProvider>
-    </NameAndAmountData>
+      </NameAndAmountData>
+      </>
   );
 }

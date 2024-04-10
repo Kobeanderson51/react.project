@@ -43,7 +43,7 @@ export function ExpenseModal({ toggleModal, isOpen}: {toggleModal: () => void, i
       >
         <FocusLock>
             <div className="ml-7">
-            <h3 id="expense"className="text-2xl p-5 ml-14">New Deposit</h3>
+            <h3 id="expense"className="text-2xl p-5 ml-14 dark:text-black">New Deposit</h3>
                 <div className="mt-6">
                     <input type="text" className="w-80 p-2 m-2 border-2 border-slate-400 rounded-md" placeholder="Enter Transaction Name" ref={nameRef} />
                     <input type="number" className="w-80 p-2 m-2 border-2 border-slate-400 rounded-md" placeholder="Enter Transaction Amount" ref={amountRef} />
@@ -85,7 +85,7 @@ export function DepositModal({ toggleModal, isOpen}: {toggleModal: () => void, i
       >
         <FocusLock>
           <div className="ml-7">
-            <h3 id="deposit" className="text-2xl p-5 ml-14">New Expense</h3>
+            <h3 id="deposit" className="text-2xl p-5 ml-14 dark:text-black">New Expense</h3>
             <div className="mt-6">
               <input id="deposit-transation-name" type="text" className="w-80 p-2 m-2 border-2 border-slate-400 rounded-md" placeholder="Enter Transaction Name" ref={nameRef} />
               <input id="deposit-transation-amount" type="number" className="w-80 p-2 m-2 border-2 border-slate-400 rounded-md" placeholder="Enter Transaction Amount" ref={amountRef} />

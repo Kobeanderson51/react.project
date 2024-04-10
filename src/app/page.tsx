@@ -6,10 +6,7 @@ import Add from "../add/add";
 import { moneyRecord } from './types';
 import NameAndAmountData from '@/add/nameAndAmountData';
 import useLocalStorage from 'use-local-storage';
-import DarkMode from "./darkmode/darkmode"
-
-
-
+import DarkModeSwitch from "@/header/darkmode";
 
 export default function Home() {
   // https://www.npmjs.com/package/use-local-storage
@@ -53,10 +50,11 @@ export default function Home() {
     <NameAndAmountData value={value}>
       <ModalProvider>
         {[
-          <DarkMode />,
+          <DarkModeSwitch />,
           <Header />,
           <History />,
           <Add />
+
         ]}
       </ModalProvider>
     </NameAndAmountData>

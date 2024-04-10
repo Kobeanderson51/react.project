@@ -11,7 +11,7 @@ function DarkModeSwitch() {
 
     return (
         <>
-        <div className='flex justify-end'>
+        <div className='flex justify-end -my-3'>
         <div className="container">
             <h2>Dark Mode</h2>
             <label className="switch">

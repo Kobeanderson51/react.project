@@ -22,12 +22,12 @@ export default function Header() {
               <h3></h3>
             <div className="flex flex-row justify-center bg-slate-300 shadow-lg shadow-slate-400 hover:shadow-2xl">
               <div className="p-5">
-                <h3>INCOME</h3>
+                <h3 className='text-black'>INCOME</h3>
                 <p className="text-green-500">+$0.00</p>
                 </div>
                 <div className="text-3xl flex items-center text-gray-400">|</div>
                 <div className="p-5">
-                <h3>EXPENSE</h3>
+                <h3 className='text-black'>EXPENSE</h3>
                 <p className="text-red-400">-$0.00</p>
                 </div>
             </div>

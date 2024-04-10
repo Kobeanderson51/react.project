@@ -1,10 +1,9 @@
 import ReactDOM from "react-dom";
 import React from "react";
 import Modal, { ModalProvider } from "styled-react-modal";
-import FocusLock from "react-focus-lock"; // Add the import statement for react-focus-lock
+import FocusLock from "react-focus-lock";
 import { NameAndAmountDataContext } from "@/add/nameAndAmountData";
 import { useContext, useRef } from "react";
-import DarkMode from "@/app/darkmode/darkmode";
 import { v4 as uuidv4 } from 'uuid';
 
 const StyledModal = Modal.styled`
@@ -24,7 +23,7 @@ export function ExpenseModal({ toggleModal, isOpen}: {toggleModal: () => void, i
   const amountRef = useRef<HTMLInputElement>();
 
   const onClickAdd = () => {
-    const name: string = nameRef.current?.value ?? ''; // Add null check for nameRef.current
+    const name: string = nameRef.current?.value ?? '';
     const amount: number = Number(amountRef.current?.value ?? 0) ?? 0;
     const id = uuidv4()
     addTransaction({ id, name, amount });

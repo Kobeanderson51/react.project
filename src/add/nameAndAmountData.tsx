@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 import { type } from "os";
 import { createContext } from "react";
@@ -23,6 +23,6 @@ export const NameAndAmountDataContext = createContext<NameAndAmountDataContextTy
     deleteTransaction: (transaction: number) => {},
 });
 
-export default function NameAndAmountData({ children, value }: { children: any[], value: NameAndAmountDataContextType}) {
+export default function NameAndAmountData({ children, value }: { children: ReactNode, value: NameAndAmountDataContextType}) {
   return <NameAndAmountDataContext.Provider value={value} >{children}</NameAndAmountDataContext.Provider>;
 }

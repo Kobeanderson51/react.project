@@ -48,14 +48,11 @@ export default function Home() {
 
   return (
     <NameAndAmountData value={value}>
-      <ModalProvider>
-        {[
+      <ModalProvider>      
           <DarkModeSwitch />,
           <Header />,
           <History />,
           <Add />
-
-        ]}
       </ModalProvider>
     </NameAndAmountData>
   );

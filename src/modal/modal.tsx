@@ -19,8 +19,8 @@ export function ExpenseModal({ toggleModal, isOpen}: {toggleModal: () => void, i
 
   const { addTransaction } = useContext(NameAndAmountDataContext);
 
-  const nameRef = useRef<HTMLInputElement>();
-  const amountRef = useRef<HTMLInputElement>();
+  const nameRef = useRef<any>();
+  const amountRef = useRef<any>();
 
   const onClickAdd = () => {
     const name: string = nameRef.current?.value ?? '';
@@ -61,8 +61,8 @@ export function DepositModal({ toggleModal, isOpen}: {toggleModal: () => void, i
 
   const { addDeposit } = useContext(NameAndAmountDataContext);
 
-  const nameRef = useRef<HTMLInputElement>();
-  const amountRef = useRef<HTMLInputElement>();
+  const nameRef = useRef<any>();
+  const amountRef = useRef<any>();
 
   const onClickAdd = () => {
     const name: string = nameRef.current?.value ?? ''; // Add null check for nameRef.current

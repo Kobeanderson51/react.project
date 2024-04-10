@@ -1,5 +1,5 @@
 export type moneyRecord = {
-    id: number | undefined,
+    id: string,
     name: string,
     amount: number,
 }

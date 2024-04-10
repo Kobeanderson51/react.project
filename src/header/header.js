@@ -1,7 +1,6 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { NameAndAmountDataContext } from '@/add/nameAndAmountData';
-import "../history/history"
-import { parse } from 'path';
+import "../history/history";
 
 export default function Header() {
   const { transactions = [], deposits = [] } = useContext(NameAndAmountDataContext);
@@ -12,7 +11,7 @@ export default function Header() {
   
 
   return (
-      <React.Fragment>
+      <>
         <header className="flex flex-col items-center sm:text-center">
         
         <h1 className="text-5xl p-5">Expense Tracker</h1>
@@ -32,6 +31,6 @@ export default function Header() {
                 </div>
             </div>
         </header>
-    </React.Fragment>
+    </>
   )
 }

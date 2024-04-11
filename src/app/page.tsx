@@ -50,9 +50,9 @@ export default function Home() {
       <title>Budget Tracker</title>
     <NameAndAmountData value={value}>
       <ModalProvider>      
-          <DarkModeSwitch />,
-          <Header />,
-          <History />,
+          <DarkModeSwitch />
+          <Header />
+          <History />
           <Add />
       </ModalProvider>
       </NameAndAmountData>

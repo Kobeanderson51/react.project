@@ -13,7 +13,6 @@ export default function Home() {
   const [transactions, setTransactions] = useLocalStorage<moneyRecord[]>("transactions", []);
   const [deposits, setDeposits] = useLocalStorage<moneyRecord[]>("deposits", []);
   
-  
   const addTransaction = (transaction: moneyRecord): void => {
       setTransactions([...transactions, transaction]);
   }

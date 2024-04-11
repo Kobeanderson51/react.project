@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { NameAndAmountDataContext } from '@/add/nameAndAmountData';
 import "../history/history";
 
@@ -11,12 +11,12 @@ export default function Header() {
   
   const displayAmount = document.getElementById('display-amount');
   if (total < 0) {
-    displayAmount.classList.remove('text-green-500')
-    displayAmount.classList.add('text-red-400')
+    displayAmount?.classList.remove('text-green-500')
+    displayAmount?.classList.add('text-red-400')
   } else {
-    displayAmount.classList.remove('text-red-400')
-    displayAmount.classList.add('text-green-500')
-  }
+    displayAmount?.classList.remove('text-red-400')
+    displayAmount?.classList.add('text-green-500')
+  } 
 
   return (
       <>

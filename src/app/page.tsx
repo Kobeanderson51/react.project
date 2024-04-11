@@ -1,6 +1,6 @@
 "use client"
 import { ModalProvider } from "styled-react-modal";
-import Header from "../header/header.js";
+import Header from "../header/header";
 import History from "../history/history";
 import Add from "../add/add";
 import { moneyRecord } from './types';
